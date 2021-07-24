@@ -1,0 +1,20 @@
+// COLOURS
+// primary
+$color-primary: #fbc531;
+// accent
+$color-accent: #ff4757;
+// base colors
+$color-text: #282828;
+$color-dk-gray: #2f3542;
+$color-gray: #a4b0be;
+$color-lg-gray: #f8f8f8;
+
+// effects
+$box-shadow: 0px 5px 5px -5px rgba(0, 0, 0, 0.25);
+$transitions: all 0.5s ease;
+
+// gradient
+$gradient: linear-gradient(to right top, #fbc531, #ffa82e, #ff8937, #ff6946, #ff4757);
+
+// color svg
+$color-svg-primary: invert(73%) sepia(78%) saturate(6820%) hue-rotate(328deg) brightness(101%) contrast(105%);

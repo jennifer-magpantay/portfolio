@@ -1,0 +1,25 @@
+// ---------- ANIMATION ----------
+@keyframes gradient-background {
+    0% {
+        // to your animation you will set the position to your background according to x & y axios;
+        // set it te positions to each 'step' of your animation
+        background-position: 0 50%;
+    }
+
+    50% {
+        background-position: 100% 100%;
+    }
+
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+@keyframes typing-blink {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

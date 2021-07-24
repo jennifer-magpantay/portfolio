@@ -1,0 +1,80 @@
+/* ---------- GLOBAL ---------- */
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Montserrat:wght@800&family=Roboto:wght@300;400;500&display=swap");
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", Arial, sans-serif;
+}
+
+// Font size: 16/20/25/31.25/39.06/48.83 type scale major third
+// Font size: 16 regular /20 medium /24 regular /34 regular /48 regular /60 light /96 light - material design Google
+
+// title
+h1 {
+  // color: $color-dk-gray;
+  font-family: "Montserrat", sans-serif;
+  // font-size: clamp(3.9rem, 4.9vw, 4.9rem);
+  font-size: clamp(4.8rem, 6vw, 6rem);
+  text-shadow: $box-shadow;
+}
+
+// subtitle, section title
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: clamp(3.1rem, 3.9vw, 3.9rem);
+  // font-size: clamp(4.8rem, 6vw, 6rem);
+  font-weight: 300;
+}
+
+// section subtitle, product title, card product title
+h3 {
+  color: #000;
+  font-family: "Lora", serif;
+  font-size: clamp(2.5rem, 3.1vw, 3.1rem);
+  // font-size: clamp(3.4rem, 4.8vw, 4.8rem);
+}
+
+// categorias
+h4 {
+  color: $color-dk-gray;
+  font-family: "Roboto", sans-serif;
+  font-size: clamp(2rem, 2.5vw, 2.5rem);
+  // font-size: clamp(2.4rem, 3.4vw, 3.4rem);
+  font-weight: 500;
+}
+
+p,
+li {
+  color: $color-dk-gray;
+  font-family: "Roboto", sans-serif;
+  font-size: clamp(1.4rem, 1.6vw, 1.6rem);
+  font-weight: 400;
+}
+
+// a href links
+a {
+  color: inherit;
+  cursor: pointer;
+  font-size: inherit;
+  text-decoration: none;
+  transition: $transitions;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+img {
+  width: 100%;
+}
+
+hr {
+  margin: 01em 0;
+  border-top: 0;
+  border-bottom: 1px solid;
+}

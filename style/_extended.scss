@@ -1,0 +1,12 @@
+%buttons {
+  width: fit-content;
+  display: block;
+  padding: 1em 3em; 
+  box-shadow: $box-shadow;
+  cursor: pointer;
+  font-size: clamp(1.2rem, 1.4vw, 1.4rem);
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transition: $transitions;
+}

@@ -1,0 +1,244 @@
+section {
+    padding: 2em 8.66%;
+}
+
+.section__title {
+    margin-bottom: 0.5em;
+    text-align: center;
+}
+
+.section__description {
+    text-align: center;
+}
+
+.container-flex {
+    margin: 03em 0;
+
+    @include tablet {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+
+.container {
+    padding: 01em;
+    @include tablet {
+        width: 50%;
+    }
+
+    .img__container {
+        width: 100%;
+        height: clamp(200px, 2.5vh, 250px);
+        position: relative;
+        background-color: red;
+
+        img {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            inset: 0;
+            object-fit: cover;
+        }
+    }
+}
+
+.hero {
+    width: 100%;
+    height: 100vh;
+
+    // you have to set the background + background size, otherwise won't work
+    // as much extended/bigger is your background size, the better
+    background: linear-gradient(
+            to right top,
+            #fbc531,
+            #ffaf2e,
+            #ff9833,
+            #ff803c,
+            #ff6946,
+            #f5555b,
+            #e4466c,
+            #cc3f7b,
+            #9b4583,
+            #6a467a,
+            #434062,
+            #2f3542
+        )
+        no-repeat;
+    background-size: 300% 300%;
+    // as much longer is the animation duration time, the better
+    // set your animation as infinite, to keeping it moving over and over
+    animation: gradient-background 10s ease infinite;
+
+    // background-color: $color-dk-gray;
+
+    .text-intro {
+        margin-top: 8%;
+        color: $color-primary;
+    }
+
+    .text__wrapper {
+        display: flex;
+        align-items: center;
+        color: #fff;
+
+        .text-static {
+            text-shadow: $box-shadow;
+        }
+
+        .text-dinamic {
+            margin-left: 0.25em;
+            position: relative;
+
+            &::after {
+                content: "";
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                right: -0.5em;
+                border-right: 02rem solid #fff;
+                animation: typing-blink 0.5s ease infinite;
+            }
+        }
+    }
+
+    h2 {
+        margin: 01em 0;
+    }
+
+    .button {
+        @extend %buttons;
+        margin-top: 01em;
+        border: 02px solid #fff;
+        border-radius: 50px;
+        color: #fff;
+
+        &:hover,
+        &:focus {
+            background-color: $color-accent;
+            border-color: $color-accent;
+        }
+    }
+}
+
+.about {
+    background-color: #fff;
+}
+
+.work {
+    background-color: $color-lg-gray;
+
+    .card {
+        flex: 1 30%;
+        padding: 02em 02em 03em;
+        background-color: #fff;
+        margin-bottom: 01em;
+
+        &:not(:last-child) {
+            margin-right: 01em;
+        }
+
+        img {
+            margin: 01em 0;
+        }
+
+        &__title {
+        }
+
+        &__description {
+            margin-bottom: 01em;
+
+            a {
+                text-decoration: underline;
+            }
+        }
+
+        // add hover animation to card link
+        &__link {
+            // to display the animated backrgound just at the same lenght that your title, you must to set it as inline-block
+            display: inline-block;
+            height: 100%;
+            position: relative;
+            padding: 0.5em 01em 0.5em 0.5em;
+            border-left: 06px solid $color-accent;
+            color: $color-gray;
+            font-size: clamp(1.4rem, 1.6vw, 1.6rem);
+            font-weight: 500;
+            transition: all 0.5s ease-in;
+            z-index: 1;
+
+            &::after {
+                content: "";
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                background-color: $color-accent;
+                transform: scaleX(0);
+                transform-origin: left;
+                transition: all 0.5s ease-in;
+                z-index: -1;
+            }
+
+            &:hover,
+            &:focus {
+                color: #fff;
+                box-shadow: $box-shadow;
+                &::after {
+                    transform: scaleX(1);
+                }
+            }
+        }
+    }
+}
+
+.contact {
+    background-color: #fff;
+
+    .email {
+        margin-top: 0.5em;
+        font-weight: 500;
+        text-align: center;
+
+        a {
+            padding: 0.25em;
+        }
+
+        a:focus,
+        a:hover {
+            background-color: $color-accent;
+            color: #fff;
+        }
+    }
+    .social {
+        width: 75%;
+        margin: 04em auto 0;
+
+        @include tablet {
+            width: 50%;
+        }
+
+        &__list {
+            display: flex;
+            justify-content: space-between;
+
+            &--icon {
+                .icon {
+                    width: 5rem;
+                    filter: $color-svg-primary;
+                }
+            }
+        }
+    }
+    .caption {
+        margin: 01em 0;
+        color: $color-gray;
+        font-size: clamp(1rem, 1.2vw, 1.2rem);
+        font-style: italic;
+        text-align: end;
+    }
+}

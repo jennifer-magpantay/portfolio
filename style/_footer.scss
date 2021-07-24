@@ -1,0 +1,18 @@
+footer {
+    padding: 02em 8.66%;
+    background-color: $color-text;
+    color: #fff;
+
+    .footer__logo{
+        width: 100px;
+        margin-bottom: 01em;
+    }
+
+    .copyright {
+        padding-top: 01em;
+        color: $color-lg-gray;
+        font-size: clamp(1rem, 1.4vw, 1.4rem);
+        font-weight: 300;
+        text-align: center;
+    }
+}

@@ -1,0 +1,30 @@
+header {
+     display: none;
+}
+
+header.sticky {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      padding: 01.5em 8.66%;
+      background-color: #fff;
+      box-shadow: $box-shadow;
+      // background-color: rgba(255, 252, 252, 0.1); /* white w/ opacity */
+      z-index: 3;
+
+      .header__logo{
+            width: 100px;
+      }
+
+      .nav__list--link{
+            display: inline-block;
+            padding-left: 01em;
+            cursor: pointer;
+
+            &:hover, &:focus {
+                  font-weight: 500;
+            }
+      }
+}

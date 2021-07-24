@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio Web">
+    <meta name="keywords" content="HTML, CSS, Sass, INCO">
+    <meta name="author" content="Jennifer Magpantay">
+    <!-- favicon -->
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
+    <!-- style link -->
+    <link rel="stylesheet" href="./style/main.css">
+    <title>Home :: Jennifer Magpantay | Portfolio Web</title>
+</head>
+
+<body>
+    <a name="home"></a>
+
+    <header>
+        <!-- logo -->
+        <a href="#home">
+            <img src="./assets/logo.svg" alt="Logo" class="header__logo" />
+        </a>
+        <!-- nav -->
+        <ul class="nav__list">
+            <li class="nav__list--link">
+                <a href="#about">About</a>
+            </li>
+            <li class="nav__list--link">
+                <a href="#work">Work</a>
+            </li>
+            <li class="nav__list--link">
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+    </header>
+
+    <main>
+        <!-- https://resume.io/r/71nv2T0vu -->
+        <section class="hero">
+            <h1 class="text-intro">Hi, my name is Jennifer</h1>
+            <div class="text__wrapper">
+                <h1 class="text-static">I am<span class="text-dinamic" id="js-typing"></h1>
+            </div>
+
+            <h2>Want to know about my work?</h2>
+            <a href="#work" class="button">Check it out</a>
+
+            <a name="about"></a>
+        </section>
+
+        <!-- refence div for js stick nav -->
+        <div class="scroll"></div>
+
+        <section class="about">
+            <h3 class="section__title">Who's that girl?</h3>
+
+            <div class="container-flex">
+                <div class="container ">
+                    <div class="img__container">
+                        <!-- picture -->
+                        <img src="./assets/profile.JPG" alt="Jennifer profile picture" />
+                    </div>
+                </div>
+
+                <div class="container">
+                    <!-- introduction -->
+                    <p>Front End Designer with background in Graphic Design, and a BSc in Information Technology from
+                        CCT
+                        College in Dublin - the city that became home over the past 06 years.</p>
+                    <p>Passionate about design,
+                        technologies, usability, interaction design, a keen interest in SEO and serious about web
+                        accessibility, field where I find myself drawn to. The core skills I rely on for any position
+                        are: attention to detail, creative thinking, problem solving, and learning new concepts and
+                        frameworks with ease.</p>
+                </div>
+            </div>
+            <a name="work"></a>
+        </section>
+
+        <section class="work">
+            <h3 class="section__title">Selected Works</h3>
+            <p class="section__description">A bunch of personal and small projects that I have worked on. </p>
+
+            <!-- cards project presentation -->
+            <div class="container-flex">
+                <div class="card">
+                    <h4 class="card__title">Ontrack Timer app</h4>
+                    <!-- image -->
+                    <img src="./assets/ontrack-timer.png" alt="OnTrack Timer screen page" />
+                    <p class="card__description">Based on the Pomodoro technique, this is a timer track to help you keep
+                        focused on work and to reminde you about breaks. Desk and body strech exercises are displayed
+                        after each round.</p>
+                    <!-- link -->
+                    <a href="https://ontrack-timer.vercel.app/" class="card__link" title="Web-app link"
+                        target="_blank">Open the web-app</a>
+                </div>
+
+                <div class="card">
+                    <h4 class="card__title">Lorem Ipsum Movies</h4>
+                    <!-- image -->
+                    <img src="./assets/lorem-ipsum-movies.png" alt="Lorem Ipsum Movies screen page" />
+                    <p class="card__description">A single page application (SPA) based on a famous streaming service
+                        built using React, TMDb API and
+                        Firebase. This mini project was developed following tutorial from <a
+                            href="https://www.youtube.com/channel/UCqrILQNl5Ed9Dz6CGMyvMTQ"
+                            title="CleverProgrammer channel link" target="_blank">@CleverProgrammer</a>.</p>
+                    <!-- link -->
+                    <a href="https://lorem-ipsum-movies.web.app/" class="card__link" title="Web-app link"
+                        target="_blank">Open the web-app</a>
+                </div>
+
+                <div class="card">
+                    <h4 class="card__title">COVID-19 Tracker</h4>
+                    <!-- image -->
+                    <img src="./assets/covid-19-tracker.png" alt="COVID-19 Tracker screen page" />
+                    <p class="card__description">Application built to track COVID-19 spreading numbers around the globe.
+                        Project built using React, React chart, Leaflet and Disease.sh - Open Disease Data, following
+                        tutorial from <a href="https://www.youtube.com/channel/UCqrILQNl5Ed9Dz6CGMyvMTQ"
+                            title="CleverProgrammer channel link" target="_blank">@CleverProgrammer</a>.</p>
+                    <!-- link -->
+                    <a href="" class="card__link" title="Web-app link" target="_blank">Open the web-app</a>
+                </div>
+
+                <div class="card">
+                    <h4 class="card__title">Open App</h4>
+                    <!-- image -->
+                    <img src="./assets/open-app.png" alt="Open App webpage" />
+                    <p class="card__description">Webpage developed to present Open App, an Android application, designed
+                        to
+                        connect people suffering from mental illness disorders to professionals and volunteers. The
+                        webpage was built using HTML and Bootstrap.</p>
+                    <!-- link -->
+                    <a href="https://jennifer-magpantay.github.io/openapp-bootstrap/" class="card__link"
+                        title="Webpage link" target="_blank">Open the the
+                        webpage</a>
+                </div>
+
+                <div class="card">
+                    <h4 class="card__title">Finances</h4>
+                    <!-- image -->
+                    <img src="./assets/finance.png" alt="Finances we-app screen page" />
+                    <p class="card__description">Web-app to generate a reports (detailed and by category) based on
+                        personal expenses. Concepts of React and TypeScript, HTTP request, user authentication, state,
+                        hooks, data rendering and React Router are include in the application.</p>
+                    <!-- link -->
+                    <a href="https://github.com/jennifer-magpantay/igti-react-bootcamp-2021/tree/main/module03-react-II/project-module/finances-auth"
+                        class="card__link" title="GitHub repository link" target="_blank">See the
+                        code</a>
+                </div>
+
+                <div class="card">
+                    <h4 class="card__title">Buk Store</h4>
+                    <!-- image -->
+                    <img src="./assets/buk.png" alt="Buk Store screen page" />
+                    <p class="card__description">Web-based application developed for a book store where is possible to
+                        create, to read, to update, and to delete book titles. This project was built using HTML, Sass,
+                        CSS, Javascript Express, CORS, and JSON to storage and write data.</p>
+                    <!-- link -->
+                    <a href="https://github.com/jennifer-magpantay/buk-store-crud" class="card__link"
+                        title="GitHub repository link" target="_blank">See the
+                        code</a>
+                </div>
+            </div>
+            <a name="contact"></a>
+        </section>
+
+        <section class="contact">
+            <h3 class="section__title">Don't be a stranger!</h3>
+            <p class="section__description">Let's connect! Feel free to send me a connection, give me a follow or
+                pop me
+                a message! I would love to hear from you!</p>
+            <p class="email">Email: <a href="mailto:jennifer.magpantay@gmail.com">jennifer.magpantay@gmail.com</a></p>
+
+            <div class="social">
+                <!-- social links -->
+                <ul class="social__list">
+                    <li class="social__list--icon">
+                        <a href="https://www.linkedin.com/in/jennifermagpantay/" title="LinkedIn profile link"
+                            target="_blank">
+                            <img src="./assets/linkedin.svg" alt="LinkedIn logo" title="LinkedIn logo" class="icon"></a>
+                    </li>
+
+                    <li class="social__list--icon">
+                        <a href="https://github.com/jennifer-magpantay" title="GitHub profile link" target="_blank">
+                            <img src="./assets/github.svg" alt="GitHub logo" title="GitHub logo" class="icon"></a>
+                    </li>
+
+                    <li class="social__list--icon">
+                        <a href="https://www.instagram.com/jennie_magpantay/" title="Instagram profile link"
+                            target="_blank">
+                            <img src="./assets/instagram.svg" alt="Instagram logo" title="Instagram logo"
+                                class="icon"></a>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <p class="caption">Ícones feitos por <a href="https://www.freepik.com" title="Freepik">Freepik</a>
+                    from
+                    <a href="https://www.flaticon.com/br/" title="Flaticon" target="_blank">www.flaticon.com</a>
+                </p>
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <!-- logo -->
+        <img src="./assets/logo-white.svg" alt="Logo" class="footer__logo" />
+        <hr>
+        <p class="copyright">Copyright &copy; 2020
+            Developed by Jennifer Magpantay during Get Into Tech INCO Bootcamp</p>
+    </footer>
+
+    <!-- js -->
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
